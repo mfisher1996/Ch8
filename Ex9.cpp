@@ -17,7 +17,7 @@ void setSimulationParameters(int& sTime, int& numOfServers,
                              int& tBetweenCArrival);
 
 void runSimulation();
-void updateWaitingQueue(queue<customerType>);
+void updateWaitingQueue(queue<customerType>&);
 
 int main()
 {
@@ -51,7 +51,7 @@ void setSimulationParameters(int& sTime, int& numOfServers,
     cout<< "\n************************************************" << endl;
     cout<< endl;
 }
-void updateWaitingQueue(queue<customerType> queue){
+void updateWaitingQueue(queue<customerType> & queue){
     
     customerType cust;
     
